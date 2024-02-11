@@ -1,0 +1,94 @@
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@media screen and (max-width: 400px) {
+  #features {
+    padding: 20px;
+    width: 111%;
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer {
+    width: 111%;
+  }
+
+  #portfolio {
+    width: 110%;
+  }
+}
+
+#nav {
+  list-style: none inside;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#nav li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #899b87;
+  padding: 5px;
+  margin: 10px;
+  transition: all s;
+  /* menu background color */
+}
+
+#nav li a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  width: 120px;
+  /* this is the width of the menu items */
+  line-height: 35px;
+  /* this is the hieght of the menu items */
+  color: #ffffff;
+  /* list item font color */
+}
+
+#nav li li a {
+  font-size: 80%;
+}
+
+/* smaller font size for sub menu items */
+
+#nav li:hover {
+  background: #003f20;
+}
+
+/* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+#nav ul {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  display: none;
+  /* hides sublists */
+}
+
+#nav li:hover ul ul{
+  display: none;
+}
+
+/* hides sub-sublists */
+
+#nav li:hover ul {
+  display: block;
+}
+
+/* shows sublist on hover */
+
+#nav li li:hover ul {
+  display: block;
+  /* shows sub-sublist on hover */
+  margin-left: 120px;
+  /* this should be the same width as the parent list item */
+  margin-top: -35px;
+  /* aligns top of sub menu with top of list item */
+}
